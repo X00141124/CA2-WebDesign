@@ -1,0 +1,15 @@
+Contributions.
+Yanika Khamkliang	
+Aleksandra Cesarz
+
+We have majority of the website done together.
+
+We have stayed most of the days, since the CA got handed out, in college working on this project.
+The look of the website that is carried out throughout the websites(banner, navbar, footer), we have done together during those times.
+Again whenever we worked on the website we tried to be both present, even if we didn't work on the same parts, so we could help each other out, and share ideas.
+
+The content of websites we split between each other.
+Yanika did the destinations (each continent) and the signup and login parts of the website.
+Aleksandra did the index, hotels (brings to booking), flights (brings to booking), essentials.
+
+We are planning of doing the deals site together as it involves the dynamic part of the project.

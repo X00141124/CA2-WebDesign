@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/home/brandon/Yanika-Web/WebDev-CA2/WebCA2/app/views/booking.scala.html:156:73: not found: value email[0m
+[0m[[0m[31merror[0m] [0m[0m		<script src="https://www.100forms.com/js/FORMKEY:6YNBXRM4J2GW/SEND:my@email.com" type="text/javascript"></script>[0m
+[0m[[0m[31merror[0m] [0m[0m		                                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
