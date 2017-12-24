@@ -1,0 +1,37 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An example controller showing a sample home page
+GET     /                                  controllers.HomeController.index
+GET     /america                                  controllers.HomeController.america
+GET     /asia                                  controllers.HomeController.asia
+GET     /australia                                  controllers.HomeController.australia
+GET     /booking                                  controllers.HomeController.booking
+GET     /deals                                  controllers.HomeController.deals
+GET     /essential                                  controllers.HomeController.essential
+GET     /europe                                  controllers.HomeController.europe
+GET     /flight                                  controllers.HomeController.flight
+GET     /hotels                                  controllers.HomeController.hotels
+GET     /login                                  controllers.LoginController.login
+GET     /signup                                  controllers.HomeController.signup
+
+# Request to load the add flight form
+GET     /addflight                              controllers.HomeController.addFlight
+
+# Data submitted by the from
+POST    /addFlightSubmit                        controllers.HomeController.addFlightSubmit
+
+# Delete a flight by a boarding
+GET     /delFlight/:id                        controllers.HomeController.deleteFlight(id: Long)
+
+# Login routes
+GET     /login                          controllers.LoginController.login
+POST    /loginSubmit                        controllers.LoginController.loginSubmit
+
+# Logout routea
+GET     /Logout                             controllers.LoginController.logout
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+
+

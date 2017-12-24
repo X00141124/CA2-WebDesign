@@ -1,0 +1,28 @@
+@(flightForm: Form[models.Flight], user: models.users.User)
+
+@import helper._
+
+@main("Add flight", user) {
+    <p class="lead">Add a new flight</p>
+
+    @form(action=routes.HomeController.addFlightSubmit(),'class -> "form-horizontal", 'role -> "form") {
+    @* CSRF attack prevention *@
+    @* This token, send by the controller, will be used to authenticate the form submission *@
+    @CSRF.formField
+
+    @inputText(flightForm("boarding"), '_label -> "From", 'class -> "form-control")
+    @inputText(flightForm("arrival"), '_label -> "Destination", 'class -> "form-control")
+    @inputText(flightForm("date"), '_label -> "Date", 'class -> "form-control")
+    @inputText(flightForm("price"), '_label -> "Price", 'class -> "form-control")
+    @inputText(flightForm("id"), '_label -> "", 'hidden -> "hidden")
+
+
+    <div class="actions">
+        <input type="submit" value="Add/Update Flight" class="btn btn-primary">
+        <a href="@routes.HomeController.index">
+            <buttom type="button" class="btn btn-warning">Cancel</buttom>
+        </a>
+    </div>
+
+    }
+}

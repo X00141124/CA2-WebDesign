@@ -1,0 +1,6 @@
+2017-12-24 02:39:57 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Table "PLAY_EVOLUTIONS" not found; SQL statement:
+select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%' [42102-193]
+2017-12-24 02:40:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO USER (EMAIL,NAME,PASSWORD,ROLE) VALUE[*] ('user@flights.com', 'Alice Byrne', 'password', 'user') "; expected "DIRECT, SORTED, DEFAULT, VALUES, SET, (, WITH, SELECT, FROM"; SQL statement:
+INSERT INTO user (email,name,password,role) value ('user@flights.com', 'Alice Byrne', 'password', 'user') [42001-193]
